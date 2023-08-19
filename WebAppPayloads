@@ -4015,7 +4015,7 @@ cat%20../../
 cat%20/etc/hosts
 cat%20/etc/passwd
 char%4039%41%2b%40SELECT
-cmd
+cmd.exe
 cmd.php
 cmd="/usr/bin/id
 confirm('\
